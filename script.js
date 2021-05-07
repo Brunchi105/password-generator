@@ -1,7 +1,7 @@
-var lowAlphabet = "abcdefghijklmnopqrstuvwxyz";
-var upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowerCaseAlphabet = "abcdefghijklmnopqrstuvwxyz";
+var upperCaseAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numbers = "0123456789";
-var symbols = "!#$%&'";
+var symbolCharacters = "!#$%&'";
 
 // Assignment code here
 var generatePassword = function () {
@@ -20,20 +20,20 @@ var generatePassword = function () {
 
     if (isLowerCase || isUpperCase || isSpecialChar || isNumberChar) {
       if (isLowerCase) {
-        for (var i = 0; i < lowAlphabet.length; i++) {
-          pooledCharacters.push(lowAlphabet[i]);
+        for (var i = 0; i < lowerCaseAlphabet.length; i++) {
+          pooledCharacters.push(lowerCaseAlphabet[i]);
         }
       }
 
       if (isUpperCase) {
-        for (var i = 0; i < upperLetters.length; i++) {
-          pooledCharacters.push(upperLetters[i]);
+        for (var i = 0; i < upperCaseAlphabet.length; i++) {
+          pooledCharacters.push(upperCaseAlphabet[i]);
         }
       }
 
       if (isSpecialChar) {
-        for (var i = 0; i < symbols.length; i++) {
-          pooledCharacters.push(symbols[i]);
+        for (var i = 0; i < symbolCharacters.length; i++) {
+          pooledCharacters.push(symbolCharacters[i]);
         }
       }
 
