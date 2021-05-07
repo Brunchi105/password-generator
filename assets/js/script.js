@@ -2,7 +2,7 @@
 var lowerCaseAlphabet = "abcdefghijklmnopqrstuvwxyz";
 var upperCaseAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numbers = "0123456789";
-var symbolCharacters = "!#$%&'";
+var symbolCharacters = "!#$%&'*+@";
 
 // Assignment code here
 var generatePassword = function () {
